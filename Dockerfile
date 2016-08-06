@@ -3,7 +3,7 @@
 
 # sudo docker run -dt --name teamcity_server -p 8111:8111 radzio/docker-teamcity-server
 
-FROM FROM java:8
+FROM java:8
 ENV TC_VERSION 10.0
 
 VOLUME  ["/data/teamcity"]
