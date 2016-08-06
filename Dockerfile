@@ -1,10 +1,10 @@
 # Dockerfile to build TeamCity server container images.
 # Based on Debian.
 
-# sudo docker run -dt --name teamcity_server -p 8111:8111 davidjenni/teamcity-server
+# sudo docker run -dt --name teamcity_server -p 8111:8111 radzio/docker-teamcity-server
 
 FROM debian:wheezy
-ENV TC_VERSION 9.0.1
+ENV TC_VERSION 10.0
 
 VOLUME  ["/data/teamcity"]
 ENV TEAMCITY_DATA_PATH /data/teamcity
